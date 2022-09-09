@@ -51,7 +51,7 @@ spring.datasource.password=${rds.password}<br>
 
 9) Adicionar o nome do arquivo gerado .jar no arquivo de configuração elasticbeanstalk/config.yml: <br>
 ```sh
-deploy:<br>
+deploy:
   artifact: target/nome-arquivo-gerado.jar
 ```
 
@@ -59,7 +59,7 @@ deploy:<br>
 
 11) Criar 2 variáveis de ambiente:<br>
 ```sh
-eb setenv SPRING_PROFILES_ACTIVE=beanstalk,mysql<br>
+eb setenv SPRING_PROFILES_ACTIVE=beanstalk,mysql
 eb setenv SERVER_PORT=5000
 ```
 
